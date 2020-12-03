@@ -1,0 +1,16 @@
+
+
+#imageGallery {
+
+display: flex;
+ height: 150vh;  
+ width: auto;
+ margin: 20vw;
+ justify-content:space-around;
+}
+
+img {
+height: 50vh;
+width: auto;
+
+}
