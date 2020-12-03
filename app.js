@@ -20,6 +20,22 @@ const users = [
 
 const images = ["/img/img-1.jpg", "/img/img-2.jpg", "/img/img-3.jpg"];
 
+app.get("/", (req, res) => {
+  res.render("home", {
+    images,
+  });
+});
+
+app.get("/my-dev-squad", (req, res) => {
+  res.render("allUsers", {
+    users,
+  });
+});
+
+app.get("/add-new-ironhacker", (req, res) => {
+  res.render("formUser");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(
     "hey hey hey ready to code & http://localhost:" + process.env.PORT
